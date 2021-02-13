@@ -10,32 +10,32 @@ namespace dio_bootcamp_localiza_mrv_app_console_dotnet_cadastro_series.Classes
 
         public void Atualiza(int id, Serie entidade)
         {
-            throw new NotImplementedException();
+            ListaSerie[id] = entidade;
         }
 
         public void Exclui(int id)
         {
-            throw new NotImplementedException();            
+            ListaSerie[id].Excluir();          
         }
 
         public void Insere(Serie entidade)
         {
-            throw new NotImplementedException();           
+            ListaSerie.Add(entidade);           
         }
 
         public List<Serie> Lista()
         {
-            throw new NotImplementedException();
+            return ListaSerie;
         }
 
         public int ProximoId()
         {
-            throw new NotImplementedException();            
+            return ListaSerie.Count;   
         }
 
         public Serie RetornaPorId(int id)
         {
-            throw new NotImplementedException();
+            return ListaSerie[id];
         }
     }
 }
