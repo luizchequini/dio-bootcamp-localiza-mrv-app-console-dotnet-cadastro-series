@@ -29,6 +29,11 @@ namespace dio_bootcamp_localiza_mrv_app_console_dotnet_cadastro_series.Classes
             return this.Id;
         }
 
+        public bool retornaExcluido()
+        {
+            return this.Excluido;
+        }
+
         public void Excluir()
         {
             this.Excluido = true;
